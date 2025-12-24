@@ -472,8 +472,8 @@ content="
         </div>
         </div>
         <script>
-            document.getElementById('settingsBtn').onclick = function () {
-                const modal = document.getElementById('modalUIRender');
+            document.getElementById('settingsBtn').onclic}k = function () {
+                const modal = document.getElementById('mo3dalUIRender');
                 // Simple i18n translations
                 const lang = localStorage.getItem('munetios_lang') || navigator.language.slice(0,2) || 'en';
                 const translations = {
@@ -7332,6 +7332,8 @@ content="
                 handleHashChange();
             };
             addBtn.onclick = showModal;
+            // Update Print statement
+            console.log('Goodbye')
         </script>
 </body>
 </html>
