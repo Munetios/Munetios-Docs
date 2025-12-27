@@ -99,12 +99,11 @@ content="
      .menu-btn {
         padding: 10px 15px;
         cursor: pointer;
-                background: #333;
+
      }
      .menu-btn button {
        padding: 15px 20px;
        display: flex;
-                 background: #333;
          align-items: center;
          cursor: pointer;
             justify-content: center;
@@ -128,8 +127,9 @@ content="
         padding: 15px 20px;
         border-radius: 50px;
         border: 1px solid rgba( 255, 255, 255, 0.18 );
-        background: #333;
+        background: rgba(255, 255, 255, 0.18);
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur(6px);
         transition: background 0.2s, border 0.2s;
         width: 100%;
         max-width: 800px;
@@ -160,6 +160,7 @@ content="
         display: none !important;
      }
   button,  .btn {
+       background: rgba(255, 255, 255, 0.18);
        border: 1px solid rgba( 255, 255, 255, 0.18 );
        padding: 15px 20px;
        cursor: pointer;
@@ -168,7 +169,7 @@ content="
        color: white;
            font-family: 'Lexend', sans-serif;
        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-          background: #333;
+       backdrop-filter: blur(6px);
        transition: background 0.2s, border 0.2s;
     }
     .btn:hover {
@@ -182,11 +183,12 @@ content="
         padding: 15px 20px;
         align-items: center;
         justify-content: flex-end;
-
+        /* Liquid Glass */
         gap: 20px;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur( 5px );
     border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.18);
      }
@@ -204,7 +206,7 @@ content="
        box-shadow: none;
        border-radius: 0;
        transition: none;
-       backdrop-filter: yes !important;
+       backdrop-filter: none !important;
     }
     .top-right button:hover {
        background: none !important;
@@ -230,7 +232,7 @@ content="
         z-index: 3000;
         pointer-events: auto;
         background: rgba(255, 255, 255, 0.18);
-        backdrop-filter: blur(25px);
+        backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
         display: none;
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -248,7 +250,8 @@ content="
         justify-content: center;
         z-index: 2000;
         background: rgba(31, 38, 135, 0.18);
-        backdrop-filter: blur(25px);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
         transition: opacity 0.2s;
         pointer-events: none;
         opacity: 0;
@@ -266,7 +269,8 @@ content="
         border-radius: 32px;
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
         border: 1px solid rgba(255, 255, 255, 0.18);
-        backdrop-filter: blur(25px);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
         padding: 32px 24px;
         max-width: 420px;
         width: 100%;
@@ -297,7 +301,9 @@ content="
         padding: 10px;
         background: rgba(255, 255, 255, 0.18);
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(25px);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        border-radius: 36px;
         margin: 10px;
         border: 1px solid rgba(255, 255, 255, 0.18);
         }
@@ -472,8 +478,8 @@ content="
         </div>
         </div>
         <script>
-            document.getElementById('settingsBtn').onclic}k = function () {
-                const modal = document.getElementById('mo3dalUIRender');
+            document.getElementById('settingsBtn').onclick = function () {
+                const modal = document.getElementById('modalUIRender');
                 // Simple i18n translations
                 const lang = localStorage.getItem('munetios_lang') || navigator.language.slice(0,2) || 'en';
                 const translations = {
@@ -7020,7 +7026,7 @@ content="
             const DB_NAME = 'munetios_docs_suite';
             const STORE_NAME = 'projects';
             const DB_VERSION = 1;
-            const ENCRYPTION_KEY = 'mun6etios_secmret_k2ey_2025';
+            const ENCRYPTION_KEY = 'munetios_secret_key_2025';
 
             function encrypt(text) {
                 return btoa(unescape(encodeURIComponent(text + ENCRYPTION_KEY)));
@@ -7332,8 +7338,6 @@ content="
                 handleHashChange();
             };
             addBtn.onclick = showModal;
-            // Update Print statement
-            console.log('Goodbye')
         </script>
 </body>
 </html>
