@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munetios Documentation</title>
+
+    <link rel="stylesheet" href="https://api.munetios.com/beautiful-css/beautiful.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@8..144,100..700&display=swap">
+
+    <meta name="description" content="Comprehensive documentation for Munetios, the privacy-focused search engine. Find guides, FAQs, and developer resources here.">
+    <link rel="icon" href="https://www.munetios.com/favicon.ico">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+
+    <style>
+        :root {
+            --background-color-white: #ffffff;
+            --background-color-dark: #190047;
+            --text-color-white: #000000;
+            --text-color-dark: #ffffff;
+        }
+
+        /* Custom elements MUST be block */
+        content,
+        topbar-right {
+            display: block;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Google Sans Flex', sans-serif;
+            background-color: var(--background-color-dark);
+            color: var(--text-color-dark);
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* TOPBAR */
+        .topbar {
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            height: 60px;
+            position: fixed;
+            border-radius: 0;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.25);
+        }
+
+        topbar-right {
+            margin-left: auto;
+        }
+
+        nav a {
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            width: 270px;
+            max-width: 270px;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            bottom: 0;
+            padding: 20px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            border-radius: 0;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        /* CONTENT */
+        content {
+            margin-left: 270px;
+            padding: 20px;
+            min-width: 0;
+        }
+
+        /* DOC SECTIONS (UNCHANGED) */
+        .doc-section {
+            max-width: 700px;
+            margin: 32px auto;
+            background: rgba(255,255,255,0.04);
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .doc-section:first-of-type {
+            margin-top: 0;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-left: 270px;
+            position: sticky;
+            bottom: 0;
+            border-radius: 0;
+        }
+
+        footer p {
+            text-align: center;
+            padding: 12px 20px;
+            font-size: 0.9em;
+            color: #888;
+        }
+.menu-mobile-icon {
+            display: none;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+        /* MOBILE */
+        @media (max-width: 900px) {
+            .sidebar {
+                display: none;
+            }
+.menu-mobile-icon {
+                display: block;
+            }
+
+            nav {
+                display: none;
+            }
+            content {
+                margin-left: 0;
+            }
+
+            footer {
+                margin-left: 0;
+            }
+        }
+
+        @media (max-width: 700px) {
+            
+        }
+        /* LIGHT MODE */
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: var(--background-color-white);
+                color: var(--text-color-white);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="topbar liquid-glass">
+    <h3>Munetios Documentation</h3>
+    <topbar-right>
+        <nav>
+            <a href="https://www.munetios.com">Munetios</a>
+            <a href="https://www.munetios.com/about">About</a>
+            <a href="https://www.munetios.com/whats-new">What's New</a>
+            <a href="https://blog.munetios.com/">Blog</a>
+        </nav>
+        <div class="menu-mobile-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </div>
+    </topbar-right>
+</div>
+
+<div class="sidebar liquid-glass">
+    <h2>Documentation</h2>
+    <ul>
+        <li><a href="#getting-started">Getting Started</a></li>
+        <li><a href="#introduction-of-apps">Introduction of Apps</a></li>
+        <li><a href="#search-tips">Search Tips</a></li>
+        <li><a href="#calendar">Calendar</a></li>
+        <li><a href="#omniwrite">OmniWrite</a></li>
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="#tasks">Tasks</a></li>
+        <li><a href="#notes">Notes</a></li>
+        <li><a href="#calculator">Calculator</a></li>
+        <li><a href="#notebook">Notebook</a></li>
+        <li><a href="#weather">Weather</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+    </ul>
+</div>
+
+<content>
+
+<section id="getting-started" class="doc-section">
+    <h2>Getting Started</h2>
+    <p>Welcome to Munetios Documentation! This guide will help you get started with using Munetios, the privacy-focused search engine.</p>
+    <p>To start using Munetios, simply go to <a href="https://www.munetios.com">www.munetios.com</a> and enter your search query in the search bar.</p>
+</section>
+
+<section id="introduction-of-apps" class="doc-section">
+    <h2>Introduction of Apps</h2>
+    <p>Munetios offers a variety of apps to enhance your search experience. These include:</p>
+    <ul>
+        <li>Munetios Search – The main search engine.</li>
+        <li>Munetios OmniWrite – A document creation and editing app.</li>
+        <li>Munetios Photos – A photo management and editing app.</li>
+        <li>Munetios Calendar – A calendar app to manage your events.</li>
+        <li>Munetios Tasks – A task management app to keep track of your to-dos.</li>
+        <li>Munetios Notes – A note-taking app to capture your thoughts and ideas.</li>
+        <li>Munetios Calculator – A calculator app for quick calculations.</li>
+        <li>Munetios Notebook – A notebook app for organizing your notes.</li>
+        <li>Munetios Weather – A weather app to check the latest weather updates.</li>
+    </ul>
+</section>
+
+<section id="search-tips" class="doc-section">
+    <h2>Search Tips</h2>
+    <ul>
+        <li>Use bookmarks to save your favorite searches.</li>
+        <li>Use Voice Mode to perform searches using your voice.</li>
+        <li>Use Custom Themes to personalize the appearance of Munetios.</li>
+        <li>Use School Mode to filter out inappropriate content.</li>
+        <li>Use Commands to perform specific actions quickly.</li>
+    </ul>
+</section>
+
+<section id="calendar" class="doc-section">
+    <h2>Calendar</h2>
+    <p>Munetios Calendar helps you manage your events and schedules securely and privately.</p>
+    <p>How to Use Munetios Calendar:</p>
+    <ul>
+        <li>To add an event, click on the + icon then fill in the event details.</li>
+        <li>To edit an event, click on the event icon then click edit button then make your changes.</li>
+        <li>To delete an event, click on the event icon then click delete button.</li>
+        <li>To view your calendar, click on the view button.</li>
+    </ul>
+    <p>Tips for using Munetios Calendar effectively:</p>
+    <ul>
+        <li>Turn on Desktop Notifications to stay updated on your events.</li>
+        <li>Create Calendars to organize different types of events.</li>
+        <li>Add Birthday Reminders to never miss important dates.</li>
+        <li>Share Events with other platforms.</li>
+    </ul>
+    <p>FAQs about Munetios Calendar:</p>
+    <h3>Is Munetios Calendar private?</h3>
+    <p>Yes, Munetios Calendar is designed with privacy in mind. Your data is never sold or shared without your consent.</p>
+    <h3>Can I sync Munetios Calendar with other calendar apps?</h3>
+    <p>Currently, Munetios Calendar does not support syncing with other calendar apps.</p>
+    <h3>How can I create calendars?</h3>
+    <p>To create a calendar, click on the "Create Calendar" button in the calendar app and follow the prompts.</p>
+    <h3>Do I need an account to use Munetios Calendar?</h3>
+    <p>No, you do not need an account to use Munetios Calendar. It is free and open to all users.</p>
+    <h3>Is there a mobile app?</h3>
+    <p>As of now, Munetios Calendar does not have a dedicated mobile app.</p>
+</section>
+
+<section id="omniwrite" class="doc-section">
+    <h2>OmniWrite</h2>
+    <p>Munetios OmniWrite is a powerful document creation and editing app that prioritizes your privacy.</p>
+    <p>How to Use Munetios OmniWrite:</p>
+    <ul>
+        <li>To create a document, click on the plus icon in the sidebar at top right corner. then it will create a document for you to start editing.</li>
+        <li>To edit a document, simply click on the document you want to edit from the sidebar.</li>
+        <li>To save a document, currently it has autosave functionality.</li>
+        <li>To export/import documents, click on the settings button then click export or import.</li>
+        <li>To format text, use the toolbar at the top of the document editor.</li>
+    </ul>
+    <p>Tips for using Munetios OmniWrite effectively:</p>
+    <ul>
+        <li>Use the images feature and upload images to quick insert image in your documents.</li>
+        <li>Use headings and formatting options to organize your content.</li>
+        <li>Use Custom Color themes to personalize your experience.</li>
+    </ul>
+    <p>FAQs about Munetios OmniWrite:</p>
+    <h3>Is Munetios OmniWrite private?</h3>
+    <p>Yes, Munetios OmniWrite is designed with privacy in mind and encrypted. Your documents are never sold or shared without your consent.</p>
+    <h3>Can I collaborate with others on documents?</h3>
+    <p>Currently, Munetios OmniWrite does not support real-time collaboration on documents.</p>
+    <h3>How can I export my documents?</h3>
+    <p>To export a document, click on the settings button in the sidebar, then click export button.</p>
+    <h3>Do I need an account to use Munetios OmniWrite?</h3>
+    <p>No, you do not need an account to use Munetios OmniWrite. It is free and open to all users.</p>
+    <h3>Is there a mobile app?</h3>
+    <p>As of now, Munetios OmniWrite does not have a dedicated mobile app.</p>
+</section>
+
+<section id="photos" class="doc-section">
+    <h2>Photos</h2>
+    <p>Munetios Photos is a secure and private photo management and editing app.</p>
+    <p>How to Use Munetios Photos:</p>
+    <ul>
+        <li>To upload photos, click on the create button then click upload photo or take photo</li>
+        <li>To organize photos, use albums to categorize your photos.</li>
+        <li>To edit photos, currently Munetios Photos editing is coming soon.</li>
+    </ul>
+    <p>Tips for using Munetios Photos effectively:</p>
+    <ul>
+        <li>Create Albums to organize your photos.</li>
+        <li>Use the search feature to quickly find specific photos.</li>
+    </ul>
+    <p>FAQs about Munetios Photos:</p>
+    <h3>Is Munetios Photos private?</h3>
+    <p>Yes, Munetios Photos is designed with privacy in mind. Your photos are never sold or shared without your consent.</p>
+    <h3>Can I share photos with others?</h3>
+    <p>Yes, you can share photos with others by using the sharing options within the app.</p>
+    <h3>Do I need an account to use Munetios Photos?</h3>
+    <p>No, you do not need an account to use Munetios Photos. It is free and open to all users.</p>
+    <h3>Is there a mobile app?</h3>
+    <p>As of now, Munetios Photos does not have a dedicated mobile app.</p>
+</section>
+
+<section id="tasks" class="doc-section">
+    <h2>Tasks</h2>
+    <p>Munetios Tasks helps you keep track of your to-dos and stay organized. for now tutorial/tips/faq is coming soon</p>
+</section>
+
+<section id="notes" class="doc-section">
+    <h2>Notes</h2>
+    <p>Munetios Notes is a simple, private note-taking app for capturing your thoughts and ideas. for now tutorial/tips/faq is coming soon</p>
+</section>
+
+<section id="calculator" class="doc-section">
+    <h2>Calculator</h2>
+    <p>Munetios Calculator provides quick and easy calculations within a privacy-focused environment. for now tutorial/tips/faq is coming soon</p>
+</section>
+
+<section id="notebook" class="doc-section">
+    <h2>Notebook</h2>
+    <p>Munetios Notebook helps you organize your notes and information efficiently.</p>
+    <p>How to Use Munetios Notebook:</p>
+    <ul>
+        <li>To create a notebook, click on the create button then fill in the details.</li>
+        <li>To organize notes, use tags to keep your notes organized.</li>
+        <li>To search notes, use the search bar to quickly find specific notes.</li>
+    </ul>
+    <p>Tips for using Munetios Notebook effectively:</p>
+    <ul>
+        <li>Use tags to categorize your notes for easy retrieval.</li>
+        <li>Use notebook color themes to personalize your experience.</li>
+    </ul>
+    <p>FAQs about Munetios Notebook:</p>
+    <h3>Is Munetios Notebook private?</h3>
+    <p>Yes, Munetios Notebook is designed with privacy in mind. Your notes are never sold or shared without your consent.</p>
+    <h3>Can I share notebooks with others?</h3>
+    <p>For now, sharing notebooks with others is not supported.</p>
+    <h3>Do I need an account to use Munetios Notebook?</h3>
+    <p>No, you do not need an account to use Munetios Notebook. It is free and open to all users.</p>
+    <h3>Is there a mobile app?</h3>
+    <p>As of now, Munetios Notebook does not have a dedicated mobile app.</p>
+</section>
+
+<section id="weather" class="doc-section">
+    <h2>Weather</h2>
+    <p>Munetios Weather gives you the latest weather updates without tracking your location.</p>
+    <p>How to Use Munetios Weather:</p>
+    <ul>
+        <li>To check the weather, enter your location in the search bar.</li>
+        <li>To view detailed forecasts, scroll down on the weather page.</li>
+        <li>To switch between Celsius and Fahrenheit, click on settings button then select your preferred unit.</li>
+    </ul>
+    <p>Tips for using Munetios Weather effectively:</p>
+    <ul>
+        <li>Save your favorite locations for quick access.</li>
+        <li>Use daylight savings (Inaccurate during transitions).</li>
+    </ul>
+    <p>FAQs about Munetios Weather:</p>
+    <h3>Is Munetios Weather private?</h3>
+    <p>Yes, Munetios Weather is designed with privacy in mind. Your location data is never sold or shared without your consent.</p>
+    <h3>Which API that Munetios Weather uses?</h3>
+    <p>Munetios Weather uses the Open-Meteo API to provide accurate weather data.</p>
+    <h3>Do I need an account to use Munetios Weather?</h3>
+    <p>No, you do not need an account to use Munetios Weather. It is free and open to all users.</p>
+</section>
+
+<section id="features" class="doc-section">
+    <h2>Features</h2>
+    <ul>
+        <li>Privacy-focused search with no tracking.</li>
+        <li>Ad-free experience.</li>
+        <li>Open source code for transparency.</li>
+        <li>Customizable themes and layouts.</li>
+    </ul>
+</section>
+
+<section id="faqs" class="doc-section">
+    <h2>FAQs</h2>
+    <h3>Is Munetios really private?</h3>
+    <p>Yes, Munetios is designed to protect your privacy.</p>
+    <h3>How can I contact Munetios support?</h3>
+    <p>Email: minecraftgamer97529@gmail.com</p>
+</section>
+
+<footer class="liquid-glass">
+    <p>&copy; 2026 Munetios. All rights reserved.</p>
+</footer>
+
+</content>
+<script>
+    // Mobile menu toggle
+    const menuIcon = document.querySelector('.menu-mobile-icon');
+    const sidebar = document.querySelector('.sidebar');
+    menuIcon.addEventListener('click', () => {
+        if (sidebar.style.display === 'block') {
+            sidebar.style.display = 'none';
+        } else {
+            sidebar.style.display = 'block';
+        }
+    });
+</script>
+</body>
+</html>
